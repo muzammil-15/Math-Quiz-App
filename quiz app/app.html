@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Quiz App</title>  
+</head>
+<body>
+    <!-- main box of quiz app -->
+    <div class="main">
+        <div class="title">Math Quiz App</div>
+        <!-- score and remarks field starts -->
+        <div class="header">
+            <span class="score" >Score<p id="score">0</p> </span>
+            <span class="remarks" id="remarks"></span>
+        </div>
+        <!-- quiz question boxs start -->
+        <div class="question-box">
+            <span class="random-no random"></span>
+            <span  id="operator">X</span>
+            <span class="random-no-2 random"></span>
+        </div>
+        <!-- Answer input field starts -->
+        <div class="input-field">
+            <input type="text" id="ans" placeholder="Write your Ans">
+        </div>
+        <!-- Results buttons starts -->
+        <div class="result-btn">
+            <button class="btn" id="ok" onclick="game()">Check</button>
+            <button class="btn" id="next" >Next</button>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
